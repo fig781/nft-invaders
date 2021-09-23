@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: headerFont;
+  src: url(DisposableDroidBB.ttf);
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 70px;
+  font-family: headerFont;
+  color: rgb(0, 255, 0);
+}
+
+.hero a {
+  font-size: 40px;
+  font-family: headerFont;
+  color: rgb(0, 255, 0);
+}
+
+.display-box {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.display-box img {
+  height: 100px;
+  width: 100px;
+}
+
+.float1 {
+  animation: float1 6s ease-in-out infinite;
+}
+
+.float2 {
+  animation: float2 7s ease-in-out infinite;
+}
+
+.float3 {
+  animation: float3 5s ease-in-out infinite;
+}
+
+.right-margin {
+  margin-right: 50px;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-25px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-40px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
